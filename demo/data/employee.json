@@ -1,0 +1,41 @@
+{
+  "split": 2,
+  "employees": [
+    {
+      "name": "Shyam",
+      "email": "shyamjaiswal@gmail.com"
+    },
+    {
+      "name": "Bob",
+      "email": "bob32@gmail.com"
+    },
+    {
+      "name": "Jai",
+      "email": "jai87@gmail.com"
+    },
+    {
+      "name": "Shyam1",
+      "email": "shyam1jaiswal@gmail.com"
+    },
+    {
+      "name": "Bob1",
+      "email": "bob132@gmail.com"
+    },
+    {
+      "name": "Jai1",
+      "email": "jai187@gmail.com"
+    },
+    {
+      "name": "Shyam2",
+      "email": "shyam2jaiswal@gmail.com"
+    },
+    {
+      "name": "Bob2",
+      "email": "bob232@gmail.com"
+    },
+    {
+      "name": "Jai2",
+      "email": "jai287@gmail.com"
+    }
+  ]
+}
