@@ -39,14 +39,16 @@ export class FUploadService {
 
   }
 
-  uploadFile(dataList: any[], splitCount: number) {
+  async uploadFile(dataList: any[], splitCount: number) {
     let curatedData: any = [];
     this.message = 'File Upload Inprogress';
-    dataList.forEach(async (element, index) => {
-      curatedData.push(element);
-      if(index+1 % splitCount === 0 || index === dataList.length - 1)  {
-        try{
+    let index = 0;
+    for (let data of dataList) {
+      curatedData.push(data);
+      if ((index + 1) % splitCount === 0 || index === dataList.length - 1) {
+        try {
           await this.postData(curatedData);
+          console.log('Posted Data count - ', curatedData.length);
           this.uploadedData = curatedData;
         } catch (err) {
           console.log(err);
@@ -55,15 +57,15 @@ export class FUploadService {
         curatedData = [];
       }
 
-      if(!this.isUploadSuccess || index === dataList.length - 1) {
+      if (!this.isUploadSuccess || index === dataList.length - 1) {
         this.message = this.isUploadSuccess ? 'File Uploaded Successfully' : 'File Upload Failed';
       }
-
-    });
+      index++;
+    }
   }
 
   postData(data: any) {
-      return this.httpClient.post('https://reqres.in/api/users', data).pipe(delay(2000)).toPromise();
+    return this.httpClient.post('https://reqres.in/api/users', data).pipe(delay(2000)).toPromise();
   }
 
 }
