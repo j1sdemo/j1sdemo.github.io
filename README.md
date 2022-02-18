@@ -1,6 +1,16 @@
 # FileUploadApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+## Demo
+
+Check https://j1sdemo.github.io/ page to upload a file. You can use the file from demo/data/employee.json file to test. This app will call real dummy api https://reqres.in/api/users to post the data. 
+
+AppScreenShot
+
+![image](https://user-images.githubusercontent.com/3309381/154703296-9c7d7256-7ed1-462b-a59a-5234c01c5f58.png)
+
+Upload Successful ScreenShot
+
+![image](https://user-images.githubusercontent.com/3309381/154706916-2768a599-8e7b-484a-a1f8-b0af6e4e22b8.png)
 
 ## Development server
 
