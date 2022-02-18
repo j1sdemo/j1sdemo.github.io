@@ -4,6 +4,8 @@
 
 Check https://j1sdemo.github.io/ page to upload a file. You can use the file from demo/data/employee.json file to test. This app will call real dummy api https://reqres.in/api/users to post the data. 
 
+The file have a property split:2, the limit of records to be posted with every api. Synchronosly the api calls will be called one by one with the limited records as mentioned in the data file. 
+
 AppScreenShot
 
 ![image](https://user-images.githubusercontent.com/3309381/154703296-9c7d7256-7ed1-462b-a59a-5234c01c5f58.png)
