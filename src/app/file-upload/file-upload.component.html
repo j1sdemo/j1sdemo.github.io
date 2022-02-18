@@ -1,0 +1,12 @@
+<p>file-upload works!</p>
+
+<input type="file" name="file" (change)="onUpload($event)">
+
+<div>
+  <h1>{{fUpload.message$ | async}}</h1>
+</div>
+
+<div>
+  Uploaded Data:
+  <pre>{{fUpload.uploadedData$ | async | json}}</pre>
+</div>
